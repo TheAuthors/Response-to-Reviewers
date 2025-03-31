@@ -1,7 +1,5 @@
 # Response-to-Reviewers
 
-\section{answer}
-
 Thank you so much for your detailed review!
 
 \textbf{I.} Most of the articles we have carefully studied, but some of them we see for the first time - the literature in this area is growing very fast. We come from a theoretical probability background, and for this reason, many of the articles appear irrelevant to us. In any case, we  write a detailed analysis of the articles you mentioned, and we will include some of them in the article.  

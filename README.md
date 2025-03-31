@@ -61,3 +61,5 @@ As can be seen from this table, within the time n_epsilon found in the paper, SG
 
 The upper probability estimates shown in Table 1 were obtained using explicit formulas (for the specific case of double exponential distribution) from the our paper, with the exception of the roots $\mu_\uparrow$ and $\mu_\downarrow$, which were computed using the standard bisection method.
 Estimates of the actual transition probabilities were obtained using a standard Monte Carlo method, running SGD near the sharp maximum $10^5$ times.
+
+![table2](https://github.com/TheAuthors/Response-to-Reviewers/blob/64a8f16f84e7d852f0680786de837f3674d5f2ef/Reviewer%20v8xA/table2.jpg)

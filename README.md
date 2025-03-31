@@ -41,6 +41,7 @@ However, it should be noted that the aforementioned works are highly interesting
 **Diagonal Linear Networks,** as shown in the work by [Berthier et al. (2023)], are systems where features become activated not all at once, but gradually. Starting from small (near-zero) initial values, the model tends to remain "stuck" near partial "saddle-like" states for extended periods before transitioning to a state with fuller feature activation. The early stages of training produce very sparse solutions, but over time, an increasing number of coordinates begin to participate, resulting in a richer final model. The number of genuinely active features directly depends on how long the training continues—the longer the process runs, the lower the sparsity becomes. The dynamics of wandering among stable states somewhat resemble the effects we describe for SGD in our article; however, in our case, the system can return to previously visited equilibrium points.
 
 ## Numerical experiments. 
+### Convergence to minima
 
 In the first simulation, we set $\varepsilon = 0.001$ and consider stochastic gradient descent (SGD) on a cubic spline target function with two minima at $x = -1$ and $x = 1$, and a maximum at $x = 0$. We then plot the trajectory of SGD under two types of noise: centered alpha-stable noise with parameter $\alpha = 1.2$  (H1), and standard Gaussian noise (H2).
 We observe that with alpha-stable noise, the trajectory tends to jump between the two minima. In contrast, under Gaussian noise, the process typically remains confined to the neighborhood of the initial minimum. 
@@ -49,8 +50,13 @@ We observe that with alpha-stable noise, the trajectory tends to jump between th
 ![SGD2](https://github.com/TheAuthors/Response-to-Reviewers/blob/71b649c8a1ff0ddd4288e0cc20b8223ca5749655/Reviewer%20v8xA/SGD_2.png)
 ![SGD1](https://github.com/TheAuthors/Response-to-Reviewers/blob/a2d7d8daae7363afdb1add8c8bcd32aed2545063/Reviewer%20v8xA/SGD_1.png)
 
-The simulation data demonstrate that, generally speaking, SGD does not converge to a single minimum because it may oscillate between different minima. However, it is true that after some time, SGD eventually converges to and remains at a minimum. This behavior is illustrated in the following simulations.
+The simulations demonstrate that, generally speaking, SGD does not converge to a single minimum because it may oscillate between different minima. However, it is true that after some time, SGD eventually converges to and remains at a minimum. This behavior is illustrated in the following simulations.
 
+TABLE TABLE TABLE 
+
+As can be seen from this table, within the time n_epsilon found in the paper, SGD converges to a minimum. One can also observe the significant difference in the number of steps required for H1 and H2 cases.
+
+### Escape maximum
 
 
 The upper probability estimates shown in Table 1 were obtained using explicit formulas (for the specific case of double exponential distribution) from the our paper, with the exception of the roots $\mu_\uparrow$ and $\mu_\downarrow$, which were computed using the standard bisection method.

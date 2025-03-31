@@ -42,7 +42,15 @@ However, it should be noted that the aforementioned works are highly interesting
 
 ## Numerical experiments. 
 
-The upper probability estimates shown in Table 1 were obtained using explicit formulas (for the specific case of double exponential distribution) from the our paper, with the exception of the roots $\mu_\uparrow$ and $\mu_\downarrow$, which were computed using the standard bisection method.
-Estimates of the actual transition probabilities were obtained using a standard Monte Carlo method, running SGD near the sharp maximum $10^5$ times.
+In the first simulation, we set $\varepsilon = 0.001$ and consider stochastic gradient descent (SGD) on a cubic spline target function with two minima at $x = -1$ and $x = 1$, and a maximum at $x = 0$. We then plot the trajectory of SGD under two types of noise: centered alpha-stable noise with parameter $\alpha = 1.2$  (H1), and standard Gaussian noise (H2).
+We observe that with alpha-stable noise, the trajectory tends to jump between the two minima. In contrast, under Gaussian noise, the process typically remains confined to the neighborhood of the initial minimum. 
+
 
 ![SGD1](https://github.com/TheAuthors/Response-to-Reviewers/blob/a2d7d8daae7363afdb1add8c8bcd32aed2545063/Reviewer%20v8xA/SGD_1.png)
+
+The simulation data demonstrate that, generally speaking, SGD does not converge to a single minimum because it may oscillate between different minima. However, it is true that after some time, SGD eventually converges to and remains at a minimum. This behavior is illustrated in the following simulations.
+
+
+
+The upper probability estimates shown in Table 1 were obtained using explicit formulas (for the specific case of double exponential distribution) from the our paper, with the exception of the roots $\mu_\uparrow$ and $\mu_\downarrow$, which were computed using the standard bisection method.
+Estimates of the actual transition probabilities were obtained using a standard Monte Carlo method, running SGD near the sharp maximum $10^5$ times.

@@ -23,7 +23,7 @@ Nevertheless, [Nguyen et al, 2019] is very useful citation and we somehow missed
 
 
 **Large deviation theory.** In the works [Azizian et al., 2024], [Bajovi et al, 2023]   the random variables \(\xi_k\) are sub-Gaussian; in [Hult et al, 2025]
-the random variables \(\xi_k\)  have a finite exponential moment.  
+the random variables $$\xi_k$$  have a finite exponential moment.  
 Obviously, such random variables represent a special case when the condition \([\mathbf{H}_2]\) holds.   
 It is worth noting that, in principle, their large deviation methods allow studying the asymptotic behavior in SGD only when 
 $$E e^{c|\xi_k|} < \infty$$

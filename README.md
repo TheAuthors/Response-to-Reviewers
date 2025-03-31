@@ -29,9 +29,7 @@ Nevertheless, [Nguyen et al, 2019] is very useful citation and we somehow missed
 the random variables \(\xi_k\)  have a finite exponential moment.  
 Obviously, such random variables represent a special case when the condition \([\mathbf{H}_2]\) holds.   
 It is worth noting that, in principle, their large deviation methods allow studying the asymptotic behavior in SGD only when 
-\(
-{E} e^{c|\xi_k|} < \infty
-\)
+$ {E} e^{c|\xi_k|} < \infty$
 for all \(c > 0\).  So called light tail case. Although the authors of [Azizian et al., 2024] and [Bajovi et al, 2023]  impose an even stronger condition.  
 It is easy to see that this condition is not satisfied by any random variables from the class \([\mathbf{H}_1]\) and by "most" random variables from the class \([\mathbf{H}_2]\).  
 As can be observed from the works [Wang et al., 2021], [Imkeller, Pavlyukevich, 2008], [Simsekli et al., 2019], the overall dynamics of SGD will be significantly different in the case of light tails.  

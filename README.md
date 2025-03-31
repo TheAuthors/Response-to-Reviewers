@@ -1,6 +1,6 @@
 # Response-to-Reviewers
 
-Review of the literature mentioned by the Reviewer v8xA.
+## Review of the literature mentioned by the Reviewer v8xA.
 
 **Diffusion approximation.** Thank you for listing a number of potentially useful citations for our paper. Sadly, you did not used a proper citation so the actual papers are left ambiguous.
 
@@ -22,7 +22,7 @@ Nevertheless, [Nguyen et al, 2019] is very useful citation and we somehow missed
 [Baudel et al, 2023], [Hu et al, 2019], [Mori et al, 2022] all have white noise which is very narrow example of condition $[\mathbf{H}_2]$ which leads to a larger times to escape a basin of local mimima. Given that, [Hu et al, 2019] use Large Deviations Theory which gives weak approximations, and [Baudel et al, 2023] are interested in metastable dynamics (not unlike Wang et al.) which is too large of scope comparing with questions we consider in our paper.
 
 
-\textbf{Large deviation theory.} In the works [Azizian et al., 2024], [Bajovi et al, 2023]   the random variables \(\xi_k\) are sub-Gaussian; in [Hult et al, 2025]
+**Large deviation theory.** In the works [Azizian et al., 2024], [Bajovi et al, 2023]   the random variables \(\xi_k\) are sub-Gaussian; in [Hult et al, 2025]
 the random variables \(\xi_k\)  have a finite exponential moment.  
 Obviously, such random variables represent a special case when the condition \([\mathbf{H}_2]\) holds.   
 It is worth noting that, in principle, their large deviation methods allow studying the asymptotic behavior in SGD only when 
@@ -31,15 +31,16 @@ for all \(c > 0\).  So called light tail case. Although the authors of [Azizian 
 It is easy to see that this condition is not satisfied by any random variables from the class \([\mathbf{H}_1]\) and by "most" random variables from the class \([\mathbf{H}_2]\).  
 As can be observed from the works [Wang et al., 2021], [Imkeller, Pavlyukevich, 2008], [Simsekli et al., 2019], the overall dynamics of SGD will be significantly different in the case of light tails.  
 
-
-
-
-
-\textbf{Statistical physics methods.} To briefly summarize, the works by [Mignacco et al, 2020],  [Veiga et al, 2024] employ a continuous approximation of stochastic gradient dynamics and adopt settings that allow deriving analytical expressions for (among other things) generalization error. They further empirically demonstrate the consistency of their theoretical framework with practical observations. In contrast, our work focuses exclusively on the dynamics of idealized stochastic gradient descent, but we provide limit theorems with a  probability proof. 
+**Statistical physics methods.** To briefly summarize, the works by [Mignacco et al, 2020],  [Veiga et al, 2024] employ a continuous approximation of stochastic gradient dynamics and adopt settings that allow deriving analytical expressions for (among other things) generalization error. They further empirically demonstrate the consistency of their theoretical framework with practical observations. In contrast, our work focuses exclusively on the dynamics of idealized stochastic gradient descent, but we provide limit theorems with a  probability proof. 
 
 In another study, [Mignacco et al, 2022], the authors provide a phenomenological description of the noise arising in SGD algorithms applied to binary classification tasks for Gaussian mixtures. They find that such noise can be well characterized by an effective temperature derived using the fluctuation-dissipation theorem. Unlike this phenomenological approach, we simplify the SGD model to one with additive noise and obtain theoretical results while making minimal restrictive assumptions about the noise distribution. Therefore, a direct comparison of their findings with our results is not feasible.
 
 However, it should be noted that the aforementioned works are highly interesting and present an intriguing approach to analyzing the dynamics of SGD algorithms in real-world machine learning problems. So, most probably we should include these papers.
 
 
-\textbf{Diagonal Linear Networks}, as shown in the work by [Berthier et al. (2023)], are systems where features become activated not all at once, but gradually. Starting from small (near-zero) initial values, the model tends to remain "stuck" near partial "saddle-like" states for extended periods before transitioning to a state with fuller feature activation. The early stages of training produce very sparse solutions, but over time, an increasing number of coordinates begin to participate, resulting in a richer final model. The number of genuinely active features directly depends on how long the training continues—the longer the process runs, the lower the sparsity becomes. The dynamics of wandering among stable states somewhat resemble the effects we describe for SGD in our article; however, in our case, the system can return to previously visited equilibrium points.
+**Diagonal Linear Networks,** as shown in the work by [Berthier et al. (2023)], are systems where features become activated not all at once, but gradually. Starting from small (near-zero) initial values, the model tends to remain "stuck" near partial "saddle-like" states for extended periods before transitioning to a state with fuller feature activation. The early stages of training produce very sparse solutions, but over time, an increasing number of coordinates begin to participate, resulting in a richer final model. The number of genuinely active features directly depends on how long the training continues—the longer the process runs, the lower the sparsity becomes. The dynamics of wandering among stable states somewhat resemble the effects we describe for SGD in our article; however, in our case, the system can return to previously visited equilibrium points.
+
+## Numerical experiments. 
+
+The upper probability estimates shown in Table 1 were obtained using explicit formulas (for the specific case of double exponential distribution) from the our paper, with the exception of the roots $\mu_\uparrow$ and $\mu_\downarrow$, which were computed using the standard bisection method.
+Estimates of the actual transition probabilities were obtained using a standard Monte Carlo method, running SGD near the sharp maximum $10^5$ times.

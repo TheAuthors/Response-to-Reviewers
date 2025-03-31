@@ -1,11 +1,8 @@
 # Response-to-Reviewers
 
-Thank you so much for your detailed review!
+Review of the literature mentioned by the Reviewer v8xA.
 
-\textbf{I.} Most of the articles we have carefully studied, but some of them we see for the first time - the literature in this area is growing very fast. We come from a theoretical probability background, and for this reason, many of the articles appear irrelevant to us. In any case, we  write a detailed analysis of the articles you mentioned, and we will include some of them in the article.  
-
-
-\textbf{Diffusion approximation.} Thank you for listing a number of potentially useful citations for our paper. Sadly, you did not used a proper citation so the actual papers are left ambiguous.
+**Diffusion approximation.** Thank you for listing a number of potentially useful citations for our paper. Sadly, you did not used a proper citation so the actual papers are left ambiguous.
 
 Papers about diffusion approximation: [Li et al, 2022], [Baudel et al, 2023], [Hu et al, 2019], [Mori et al, 2022], [Xi et al 2020], [Nguyen et al, 2019]
 We haven't found any papers on the topic which fits [Xi et al 2020]. Did you mean [Xie et al 2020] which may refer to

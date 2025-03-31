@@ -19,14 +19,14 @@ Diffusion approximation topic overall is close to our topic and papers in this f
 
 Nevertheless, [Nguyen et al, 2019] is very useful citation and we somehow missed it in our overview. This paper analyses a different model, which is an Euler discretization of L\'evy-driven SDE, and provides conditions under which the tail-probability for the first time to leave a basin for a minimum is similar between discrete and continuous models. Such results are important step for understanding longtime behavior of SGD.  In our paper we firstly take different model with potentially discontinuous loss function and less restrictive conditions on the distribution of errors. Secondly, we take a closer look at time regions when SGD either converging to a minimum or is still in a neighborhood of other critical points.
 
-[Baudel et al, 2023], [Hu et al, 2019], [Mori et al, 2022] all have white noise which is very narrow example of condition $$[\mathbf{H}_2]$$ which leads to a larger times to escape a basin of local mimima. Given that, [Hu et al, 2019] use Large Deviations Theory which gives weak approximations, and [Baudel et al, 2023] are interested in metastable dynamics (not unlike Wang et al.) which is too large of scope comparing with questions we consider in our paper.
+[Baudel et al, 2023], [Hu et al, 2019], [Mori et al, 2022] all have white noise which is very narrow example of condition H2 which leads to a larger times to escape a basin of local mimima. Given that, [Hu et al, 2019] use Large Deviations Theory which gives weak approximations, and [Baudel et al, 2023] are interested in metastable dynamics (not unlike Wang et al.) which is too large of scope comparing with questions we consider in our paper.
 
 
 **Large deviation theory.** In the works [Azizian et al., 2024], [Bajovi et al, 2023]   the random variables \(\xi_k\) are sub-Gaussian; in [Hult et al, 2025]
 the random variables \(\xi_k\)  have a finite exponential moment.  
 Obviously, such random variables represent a special case when the condition \([\mathbf{H}_2]\) holds.   
 It is worth noting that, in principle, their large deviation methods allow studying the asymptotic behavior in SGD only when 
-$ {E} e^{c|\xi_k|} < \infty$
+$$E e^{c|\xi_k|} < \infty$$
 for all \(c > 0\).  So called light tail case. Although the authors of [Azizian et al., 2024] and [Bajovi et al, 2023]  impose an even stronger condition.  
 It is easy to see that this condition is not satisfied by any random variables from the class \([\mathbf{H}_1]\) and by "most" random variables from the class \([\mathbf{H}_2]\).  
 As can be observed from the works [Wang et al., 2021], [Imkeller, Pavlyukevich, 2008], [Simsekli et al., 2019], the overall dynamics of SGD will be significantly different in the case of light tails.  

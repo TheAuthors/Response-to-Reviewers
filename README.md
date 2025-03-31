@@ -44,3 +44,5 @@ However, it should be noted that the aforementioned works are highly interesting
 
 The upper probability estimates shown in Table 1 were obtained using explicit formulas (for the specific case of double exponential distribution) from the our paper, with the exception of the roots $\mu_\uparrow$ and $\mu_\downarrow$, which were computed using the standard bisection method.
 Estimates of the actual transition probabilities were obtained using a standard Monte Carlo method, running SGD near the sharp maximum $10^5$ times.
+
+![SGD1](https://github.com/TheAuthors/Response-to-Reviewers/blob/a2d7d8daae7363afdb1add8c8bcd32aed2545063/Reviewer%20v8xA/SGD_1.png)

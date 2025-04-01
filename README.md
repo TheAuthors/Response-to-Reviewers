@@ -54,7 +54,7 @@ The simulations demonstrate that, generally speaking, SGD does not converge to a
 
 ![table](https://github.com/TheAuthors/Response-to-Reviewers/blob/be730770314817bfc56735e38bf038ef633613f2/Reviewer%20v8xA/table.png)
 
-As can be seen from this table, within the time n_epsilon found in the paper, SGD converges to a minimum (Theorem 2.1, Theorem 2.2). One can also observe the significant difference in the number of steps required for H1 and H2 cases.
+As can be seen from this table, within the time $n_\varepsilon$ found in the paper, SGD converges to a minimum (Theorem 2.1, Theorem 2.2). One can also observe the significant difference in the number of steps required for H1 and H2 cases.
 
 ### Escape maximum
 

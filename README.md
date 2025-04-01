@@ -23,7 +23,7 @@ Nevertheless, [Nguyen et al, 2019] is very useful citation and we somehow missed
 
 
 **Large deviation theory.** In the works [Azizian et al., 2024], [Bajovi et al, 2023]   the random variables $$\xi_k$$ are sub-Gaussian; in [Hult et al, 2025]
-the random variables $$\xi_k$$  have a finite exponential moment.  
+the random variables $$\xi_k$$  have a finite exponential moment.
 Obviously, such random variables represent a special case when the condition H2 holds.   
 It is worth noting that, in principle, their large deviation methods allow studying the asymptotic behavior in SGD only when 
 $$E e^{c|\xi_k|} < \infty$$
@@ -43,7 +43,7 @@ However, it should be noted that the aforementioned works are highly interesting
 ## Numerical experiments. 
 ### Convergence to minima
 
-In the first simulation, we set $\varepsilon = 0.001$ and consider stochastic gradient descent (SGD) on a cubic spline target function with two minima at $x = -1$ and $x = 1$, and a maximum at $x = 0$. We then plot the trajectory of SGD under two types of noise: centered alpha-stable noise with parameter $\alpha = 1.2$  (H1), and standard Gaussian noise (H2).
+In the first simulation, we set $\varepsilon = 0.0001$ and consider stochastic gradient descent (SGD) on a cubic spline target function with two minima at $x = -1$ and $x = 1$, and a maximum at $x = 0$. We then plot the trajectory of SGD under two types of noise: centered alpha-stable noise with parameter $\alpha = 1.5$  (H1), and standard Gaussian noise (H2).
 We observe that with alpha-stable noise, the trajectory tends to jump between the two minima. In contrast, under Gaussian noise, the process typically remains confined to the neighborhood of the initial minimum. 
 
 ![target](https://github.com/TheAuthors/Response-to-Reviewers/blob/92dc59bfb1159238f0d1f320e86e1d2507e1fa12/Reviewer%20v8xA/target.png)

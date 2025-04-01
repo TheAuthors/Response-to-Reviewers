@@ -52,7 +52,7 @@ We observe that with alpha-stable noise, the trajectory tends to jump between th
 
 The simulations demonstrate that, generally speaking, SGD does not converge to a single minimum because it may oscillate between different minima. However, it is true that after some time, SGD eventually converges to and remains at a minimum. This behavior is illustrated in the following simulations.
 
-![table](https://github.com/TheAuthors/Response-to-Reviewers/blob/92dc59bfb1159238f0d1f320e86e1d2507e1fa12/Reviewer%20v8xA/table.png)
+![table](https://github.com/TheAuthors/Response-to-Reviewers/blob/be730770314817bfc56735e38bf038ef633613f2/Reviewer%20v8xA/table.png)
 
 As can be seen from this table, within the time n_epsilon found in the paper, SGD converges to a minimum (Theorem 2.1, Theorem 2.2). One can also observe the significant difference in the number of steps required for H1 and H2 cases.
 
